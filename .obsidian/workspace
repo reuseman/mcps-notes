@@ -1,0 +1,134 @@
+{
+  "main": {
+    "id": "e19f05e5ac518e70",
+    "type": "split",
+    "children": [
+      {
+        "id": "b35b2d6cc8c7e152",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6abac87858cd88f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3cabb5f2b0a3077c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73ef60ab541e08fb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e147d64a9879a7e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#question/exam",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4a4dcd58caff0af8",
+    "type": "split",
+    "children": [
+      {
+        "id": "189abe73941fff03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b47947115f9971b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e58006d8765c9a69",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "b4926aeb49a851e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b31003f45bea3c4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "8bbdd45db5e7e159",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "b35b2d6cc8c7e152",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled 1.md",
+    "Bluetooth.md",
+    "IEEE 802.15.4.md",
+    "IEEE 802.11.md",
+    "media/Recording 20210608150549.webm"
+  ]
+}
