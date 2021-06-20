@@ -1,0 +1,48 @@
+CALCOLO DELLA VITA IN CICLI DI UNA BATTERIA
+
+Costo energetico del dispositivo per ciclo (E)
+	Somma delle varie comp.
+		Per ogni componente: diversi stati (es. radio: trasmissione, ricezione, idle):
+			 :si fa una media pesata (il peso è il rapporto temporale di ogni stato)
+
+Lifetime = (B(0) - L)/E
+	durata della vita in cicli (n)
+	B(0) deve essere espressa in energia
+	Energia [Wh] = V * Carica [Ah]
+	V assunta costante (corrente diretta)
+
+Ma della durata della vita abbiamo solo epsilon
+	definito come (B(i)- B(i-1))/B(i-1) se E=0
+
+eq. ricorrenza a partire da
+	B(i) = B(i-1) - E - epsilon*(B(i-1))
+	
+n: B(n) = 0
+	anche se in realtà non si accende già da prima
+
+
+In estrema sintesi, per conoscere la durata della batteria:
+1) trovare E (energia consumata ogni ciclo)
+2) trovare n (il numero dei cicli), tenendo conto del battery leakage, del quale conosciamo solo epsilon
+
+_______________________________________________
+1) Calcolare le energie relative alle varie attività
+	Per tx: preample sampling (check), trasmissione e sleep
+	Per rx: preample sampling (check), ricezione e sleep
+	_______________________
+	Abbiamo a disposizione la potenza impiegata nelle varie attività
+		E_check = p_check * t_check
+		E_sleep = p_sleep * t_sleep
+		E_tx = p_tx * (t_preamble + t_data)
+		E_rx = p_rx * (t_preamble * 1/2 + t_data)
+
+_______________________________________________
+
+2) VITA (IN t) DI UN TRASMETTITORE E DI UN RICEVITORE B-MAC, TENENDO CONTO SOLO DELLA RADIO
+
+	conosciamo f_data e f_check e le potenze trasmissive delle varie attività
+	1) Calcolare i DC di ogni attività (tempi moltiplicati per le frequenze)
+	2) Calcolare ET(t), ER(t) facendo la media pesata in base ai duty cycles e alle potenze trasmissive
+		poi moltiplicare la media pesata per t
+
+	3) quindi lifetime = batt_charge/ET(1), stessa cosa per il ricevitore
